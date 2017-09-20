@@ -1,0 +1,41 @@
+T NOTES:
+GIT = VERSION CONTROL
+Git init = create a repository, make the current folder into a repository
+If you have two files named vim.txt, unix.txt
+Git status -> will show 2 untracked file vim.txt, unix.txt
+Git add vim.txt = staged one file
+Git status -> will show one file staged new file vim. txt, 1 untracked file unix.txt
+Git commit -m ‘msg’  -> saved the staged change , vim.txt will be vim.txt(gitted); there will be a commit code e.x. 32a
+Git status→ 1 untracked file unix.txt
+Git add unix.txt = 
+Git status-> one file staged new file unix. txt
+Git commit -m ‘msg’ there will be commit code e.x. 32b
+Git status→ no untracked file
+Vim git.txt
+Git checkout 32a(codes)
+ Ls -->  vim.txt git.txt
+ Git checkout  32b → 
+ Ls → vim.txt unix.txt git.txt
+ Git log = can get all the commit codes
+ master= default folder of all the commits
+ Git checkout -b new_branch = new commits directory
+ Checkout = applys all the commits
+ I am currently in ~/Documents/Test1 (repository) ; remote add (Name: Home) (Path: ~Documents/fun) -->fun will be the new added repository; 
+ If under fun, there are 3 branches b1,b2,b3; fetch home = is action to grab all the branches in home
+ Git branch -a (-a=all)--> home/b1, home/b2, home/b3, master
+ How to copy all the branches into Test1, I am at Test1 repository, Checkout home/b1 will apply all the commits=changes in b1 to Test1.
+
+ For example, song gives me /home/song/gscript/git2
+ Get into my folder first.
+ Ls → list the folders and files (folder curriculum)
+ Cd curriculum
+ Git checkout fun /home/song/gscript/git2
+ Git fetch fun ( fetch will download all the branches)
+ Git branch -a (will list all the branch, master, remote/fun/master, remote/fun/song2; the reason for remote showing here is to show it is not yours)
+ If you want to make your repository same as fun repository,
+ Git checkout fun/master
+ Ls → show all your files + the file under master
+ How do you go back to just your repository, you apply the changes on yours 
+ branch 
+ Git checkout master (because the branch in my repository is master shown early)
+
