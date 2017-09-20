@@ -1,0 +1,11 @@
+M$
+  3 Create a file called file1: VIM file1$
+    4 insert: i$
+      5 insert a new line: ECS o$
+        6 move to one line down: j$
+          7 move one line up: k$
+            8 delete 8 lines: 8 dd$
+              9 save: :w$
+               10 save & quit: :wq$
+                11 move to the bottom line: G$
+                 12 move to the top line: gg$:
