@@ -1,21 +1,20 @@
-const a = require("express");
-const app = a();
+const a = require('express');
+const app =a();
 app.listen(3109);
-const c=(req,rsp) =>{
-  const fs = require("fs");
+const c=(req,rsp)=>{
+  const fs = require('fs');
   fs.readdir('/home',(err,data)=>{
-    let name = " ";
+   let name = "";
     data.forEach((e)=>{
       if(e!=='cw'){
-        name = name + e;
-      }else{
-        name = name;
-      };
+        name = name + e + '<br />';
+        };
     });
-    rsp.send(name);
-    if(err) throw err;
+      rsp.send(name);
+  if(err) throw err;
   });
-
 };
+  
 app.get('/name',c);
+
 

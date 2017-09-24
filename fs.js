@@ -5,8 +5,6 @@ const get = (err, Name)=>{
     if(e !== 'cw') {
       names = names + e;
    console.log(names);
-    } else {
-      names = names;
     };
   });
 };
